@@ -69,7 +69,7 @@ export const Skills = () => {
                 </div>
                 <ul className="space-y-3">
                   {category.skills.map((skill, idx) => (
-                    <li key={idx} className="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed pl-6 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400 dark:before:text-gray-600">
+                    <li key={idx} className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-gray-400 dark:before:text-gray-600">
                       {skill}
                     </li>
                   ))}

@@ -12,12 +12,12 @@ export const Hero = () => {
   return (
     <>
       {/* Header Navigation */}
-      <header className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+      <header className="border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               <ThemeToggle />
-              <span className="text-lg font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
+              <span className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
             </div>
             
             {/* Desktop Navigation */}
@@ -38,7 +38,8 @@ export const Hero = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMobileMenu}
-              className="md:hidden p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              className="md:hidden p-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-all duration-200 touch-manipulation"
+              aria-label="Открыть меню"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -47,24 +48,24 @@ export const Hero = () => {
           {/* Mobile Navigation Menu */}
           {isMobileMenuOpen && (
             <div className="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-800">
-              <nav className="flex flex-col space-y-3 pt-4">
+              <nav className="flex flex-col space-y-2 pt-4">
                 <a 
                   href="/#tech-stack" 
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white py-2 transition-colors"
+                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white py-3 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200 touch-manipulation text-base font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Стек
                 </a>
                 <a 
                   href="/#projects" 
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white py-2 transition-colors"
+                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white py-3 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200 touch-manipulation text-base font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Проекты
                 </a>
                 <a 
                   href="/#experience" 
-                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white py-2 transition-colors"
+                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white py-3 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200 touch-manipulation text-base font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Навыки
@@ -73,7 +74,7 @@ export const Hero = () => {
                   href="https://t.me/vsevolodmarchenko" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn-modern px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 ease-out mt-2"
+                  className="btn-modern px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-base font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 ease-out mt-2 touch-manipulation"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Связаться
@@ -85,54 +86,54 @@ export const Hero = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-8 px-4 sm:px-6 bg-white dark:bg-gray-900">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 mb-6">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 mb-8">
               <span className="w-2 h-2 bg-green-500 rounded-full"></span>
               Открыт к предложениям
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-gray-900 dark:text-white tracking-tight leading-tight">
               Fullstack разработчик
             </h1>
           
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-10 leading-relaxed max-w-3xl">
               Автоматизирую бизнес-процессы с помощью AI-агентов и создаю системы, 
               которые заменяют сотрудников и работают 24/7.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <a 
                 href="https://t.me/vsevolodmarchenko" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn-modern inline-flex items-center justify-center gap-2 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 hover:scale-[1.025] hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.11)] transition-all duration-300 ease-out text-sm font-medium"
+                className="btn-modern inline-flex items-center justify-center gap-3 px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-xl hover:bg-gray-800 dark:hover:bg-gray-200 hover:scale-[1.025] hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.11)] transition-all duration-300 ease-out text-base font-medium touch-manipulation"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-5 h-5" />
                 Связаться
               </a>
               <a 
                 href="/#projects"
-                className="btn-modern inline-flex items-center justify-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-[1.025] hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.11)] transition-all duration-300 ease-out text-sm font-medium"
+                className="btn-modern inline-flex items-center justify-center gap-3 px-8 py-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-[1.025] hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.11)] transition-all duration-300 ease-out text-base font-medium touch-manipulation"
               >
-                <BookOpen className="w-4 h-4" />
+                <BookOpen className="w-5 h-5" />
                 Проекты
               </a>
             </div>
 
             {/* Quick Info */}
-            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6 text-sm text-gray-600 dark:text-gray-400">
-              <div className="flex items-center gap-2">
-                <span className="font-medium text-gray-900 dark:text-white">Возраст:</span>
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6 sm:gap-8 text-base text-gray-600 dark:text-gray-400">
+              <div className="flex items-center gap-3">
+                <span className="font-semibold text-gray-900 dark:text-white">Возраст:</span>
                 <span>20 лет</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="font-medium text-gray-900 dark:text-white">Локация:</span>
+              <div className="flex items-center gap-3">
+                <span className="font-semibold text-gray-900 dark:text-white">Локация:</span>
                 <span>Москва</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="font-medium text-gray-900 dark:text-white">Опыт:</span>
+              <div className="flex items-center gap-3">
+                <span className="font-semibold text-gray-900 dark:text-white">Опыт:</span>
                 <span>2+ года</span>
               </div>
             </div>

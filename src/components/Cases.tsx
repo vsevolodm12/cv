@@ -40,20 +40,20 @@ export const Cases = () => {
   };
 
   return (
-    <section id="projects" className="py-8 px-4 sm:px-6 bg-white dark:bg-gray-900 scroll-mt-20">
+    <section id="projects" className="py-12 sm:py-16 px-4 sm:px-6 bg-white dark:bg-gray-900 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-gray-900 dark:text-white">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
           Проекты
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-8 text-base sm:text-lg">
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl">
           Избранные работы и кейсы
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group card-modern border border-gray-200 dark:border-gray-800 rounded-lg p-5 hover:border-gray-300 dark:hover:border-gray-700 hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] hover:scale-[1.025] transition-all duration-300 ease-out bg-white dark:bg-gray-800 cursor-pointer"
+              className="group card-modern border border-gray-200 dark:border-gray-800 rounded-2xl p-6 sm:p-8 hover:border-gray-300 dark:hover:border-gray-700 hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] hover:scale-[1.025] transition-all duration-300 ease-out bg-white dark:bg-gray-800 cursor-pointer touch-manipulation"
               onClick={() => {
                 if (project.link?.startsWith('/')) {
                   window.location.href = project.link;
@@ -62,9 +62,9 @@ export const Cases = () => {
                 }
               }}
             >
-              <div className="flex items-start justify-between mb-3">
+              <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-2">
-                  <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded font-medium">
+                  <span className="px-3 py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-lg font-medium">
                     {getCategoryLabel(project.category)}
                   </span>
                 </div>
@@ -73,18 +73,18 @@ export const Cases = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white hover:scale-[1.05] transition-all duration-300 ease-out"
+                    className="text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white hover:scale-[1.05] transition-all duration-300 ease-out p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     <ExternalLink className="w-5 h-5" />
                   </a>
                 )}
               </div>
               
-              <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-gray-100 transition-colors">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-gray-100 transition-colors leading-tight">
                 {project.title}
               </h3>
               
-              <p className="text-gray-600 dark:text-gray-400 mb-3 leading-relaxed text-sm sm:text-base">
+              <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed text-base sm:text-lg">
                 {project.description}
               </p>
               
@@ -92,7 +92,7 @@ export const Cases = () => {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-700 px-2 py-1 rounded hover:shadow-[0_2px_8px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_8px_rgba(255,255,255,0.11)] hover:scale-[1.025] transition-all duration-200 ease-out"
+                    className="text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-700 px-3 py-1.5 rounded-lg hover:shadow-[0_2px_8px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_8px_rgba(255,255,255,0.11)] hover:scale-[1.025] transition-all duration-200 ease-out"
                   >
                     {tech}
                   </span>

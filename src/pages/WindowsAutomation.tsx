@@ -87,14 +87,14 @@ export const WindowsAutomation = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Что было на старте</h2>
             <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
               <div className="space-y-5">
-                <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                   Компания занималась розничной продажей окон через Авито. Процесс выглядел так:
                 </p>
                 <div>
                     <h3 className="font-semibold text-gray-800 dark:text-white mb-3">
                     Проблемы:
                   </h3>
-                  <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-3 text-sm sm:text-base text-gray-700 dark:text-gray-300">
                     <li className="flex items-start gap-3">
                       <ChevronRight className="w-4 h-4 mt-1 text-gray-400 dark:text-gray-600 flex-shrink-0" />
                       Обработка одной заявки занимала несколько часов
@@ -115,9 +115,9 @@ export const WindowsAutomation = () => {
 
           {/* Goal Section */}
           <div className="group">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-5">Цель проекта</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
-                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Цель проекта</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+                <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Сделать систему, которая заменит трёх сотрудников и сможет принимать заявки из Авито, 
                 автоматически уточнять параметры, рассчитывать стоимость через API завода, 
                 отправлять цену и спецификацию клиенту, доводить его до оплаты без участия человека.
@@ -127,8 +127,8 @@ export const WindowsAutomation = () => {
 
           {/* Tech Stack */}
           <div className="group">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-5">Технологический стек</h2>
-            <div className="flex flex-wrap gap-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Технологический стек</h2>
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {[
                 { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
                 { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
@@ -141,7 +141,7 @@ export const WindowsAutomation = () => {
               ].map((tech) => (
                 <span
                   key={tech.name}
-                  className="group inline-flex items-center gap-2 px-5 py-2.5 bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-black dark:text-white rounded-xl text-sm font-medium hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.11)] hover:scale-[1.025] transition-all duration-200"
+                  className="group inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-black dark:text-white rounded-xl text-xs sm:text-sm font-medium hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.11)] hover:scale-[1.025] transition-all duration-200"
                 >
                   <div className="w-4 h-4 flex-shrink-0 overflow-hidden rounded flex items-center justify-center">
                     <img 
@@ -162,15 +162,15 @@ export const WindowsAutomation = () => {
 
           {/* Team Section */}
           <div className="group">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-5">Команда проекта</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
-              <div className="grid md:grid-cols-2 gap-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Команда проекта</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
                     <Users className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                     Команда:
                   </h3>
-                  <ul className="space-y-3 text-gray-600 dark:text-gray-400">
+                  <ul className="space-y-3 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                     <li className="flex items-start gap-3">
                       <ChevronRight className="w-4 h-4 mt-1 text-gray-400 dark:text-gray-600 flex-shrink-0" />
                       2 фуллстек-разработчика — бэкенд, фронтенд, интеграции
@@ -190,7 +190,7 @@ export const WindowsAutomation = () => {
                     <Zap className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                     Мои задачи:
                   </h3>
-                  <ul className="space-y-3 text-gray-400 text-sm">
+                  <ul className="space-y-3 text-xs sm:text-sm text-gray-400">
                     <li className="flex items-start gap-3">
                       <ChevronRight className="w-4 h-4 mt-1 text-gray-400 dark:text-gray-600 flex-shrink-0" />
                       Создание ИИ-агента для Авито
@@ -227,17 +227,17 @@ export const WindowsAutomation = () => {
 
           {/* Solutions */}
           <div className="group">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-5">Ответвления продукта</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Ответвления продукта</h2>
             
             <div className="space-y-5">
               {/* A. Avito Automation */}
-              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
                 <div className="flex items-center gap-4 mb-5">
                   <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center">
                     <Bot className="w-6 h-6 text-gray-600 dark:text-gray-300" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">А. Полная автоматизация продаж через Авито</h3>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">А. Полная автоматизация продаж через Авито</h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">Работают два ИИ-агента в связке</p>
                   </div>
                 </div>
@@ -246,8 +246,8 @@ export const WindowsAutomation = () => {
                 <div className="space-y-5">
                   {/* 1. ИИ-агент Авито */}
                   <div className="border-l-4 border-gray-300 dark:border-gray-700 pl-6">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">1. ИИ-агент Авито</h4>
-                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">1. ИИ-агент Авито</h4>
+                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                       Первый агент работает прямо в Авито и полностью заменяет менеджера по обработке заявок. 
                       Он автоматически отвечает на сообщения клиентов, задаёт уточняющие вопросы о размерах окна, 
                       количестве створок, типе открывания. Проверяет корректность ответов и собирает всю информацию 
@@ -266,7 +266,7 @@ export const WindowsAutomation = () => {
 
                   {/* Бэкенд */}
                   <div className="border-l-4 border-gray-300 dark:border-gray-700 pl-6">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Бэкенд обработки</h4>
+                    <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">Бэкенд обработки</h4>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                       Собранные данные передаются на бэкенд, написанный на JavaScript. Система подключается 
                       к API завода-производителя, автоматически рассчитывает стоимость по полученным параметрам, 
@@ -286,7 +286,7 @@ export const WindowsAutomation = () => {
 
                   {/* 2. ИИ-агент WhatsApp */}
                   <div className="border-l-4 border-gray-300 dark:border-gray-700 pl-6">
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">2. ИИ-агент WhatsApp</h4>
+                    <h4 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">2. ИИ-агент WhatsApp</h4>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                       Второй агент берёт эстафету в WhatsApp и полностью заменяет менеджера по дожиму. 
                       Он демонстрирует клиенту фотографии окон, видео монтажа, сертификаты качества, 
@@ -307,7 +307,7 @@ export const WindowsAutomation = () => {
               </div>
 
               {/* B. Telegram Bot */}
-              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
                 <div className="flex items-center gap-4 mb-5">
                   <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center">
                     <Database className="w-6 h-6 text-gray-600 dark:text-gray-300" />
@@ -331,11 +331,11 @@ export const WindowsAutomation = () => {
 
           {/* Results */}
           <div className="group">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-5">Результаты</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
-              <div className="grid md:grid-cols-2 gap-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Результаты</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2 text-lg">
+                  <h3 className="font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2 text-base sm:text-lg">
                     <TrendingUp className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                     Операционные результаты:
                   </h3>
@@ -363,7 +363,7 @@ export const WindowsAutomation = () => {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2 text-lg">
+                  <h3 className="font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2 text-base sm:text-lg">
                     <Zap className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                     Бизнес-результаты:
                   </h3>

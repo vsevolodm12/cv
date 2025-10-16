@@ -16,9 +16,9 @@ export const Hero = () => {
         <div className="max-w-7xl mx-auto px-6 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             {/* Mobile Layout: Theme Toggle - Title - Menu */}
-            <div className="flex md:hidden items-center gap-2 w-full">
+            <div className="flex md:hidden items-center w-full">
               <ThemeToggle />
-              <span className="text-base font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
+              <span className="text-base font-semibold text-gray-900 dark:text-white ml-2">Всеволод Марченко</span>
               <div className="flex-1"></div>
               <button
                 onClick={toggleMobileMenu}
@@ -31,9 +31,9 @@ export const Hero = () => {
 
             {/* Desktop Layout */}
             <div className="hidden md:flex items-center justify-between w-full">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center">
                 <ThemeToggle />
-                <span className="text-lg font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
+                <span className="text-lg font-semibold text-gray-900 dark:text-white ml-2">Всеволод Марченко</span>
               </div>
               
               {/* Desktop Navigation */}

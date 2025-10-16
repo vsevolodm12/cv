@@ -170,7 +170,7 @@ export const WindowsAutomation = () => {
                     <Users className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                     Команда:
                   </h3>
-                  <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600 dark:text-gray-400">
+                  <ul className="space-y-2 sm:space-y-3 text-base sm:text-lg text-gray-600 dark:text-gray-400">
                     <li className="flex items-start gap-3">
                       <ChevronRight className="w-4 h-4 mt-1 text-gray-400 dark:text-gray-600 flex-shrink-0" />
                       2 фуллстек-разработчика — бэкенд, фронтенд, интеграции
@@ -190,7 +190,7 @@ export const WindowsAutomation = () => {
                     <Zap className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                     Мои задачи:
                   </h3>
-                  <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600 dark:text-gray-400">
+                  <ul className="space-y-2 sm:space-y-3 text-base sm:text-lg text-gray-600 dark:text-gray-400">
                     <li className="flex items-start gap-3">
                       <ChevronRight className="w-4 h-4 mt-1 text-gray-400 dark:text-gray-600 flex-shrink-0" />
                       Создание ИИ-агента для Авито
@@ -321,7 +321,7 @@ export const WindowsAutomation = () => {
                   Отдельный бот для работы с партнёрами принимает фото замерных листов, где указаны размеры окон. 
                   CNN-модель распознаёт изображение, извлекает данные, собирает JSON и отправляет его на завод через API.
                 </p>
-                <p className="text-gray-400 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   Через минуту бот возвращает расчёт стоимости и спецификацию. В Telegram Mini App реализованы: 
                   личный кабинет, корзина, история заказов, авторизация по JWT, админка для подтверждения регистрации.
                 </p>

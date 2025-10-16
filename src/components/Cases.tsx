@@ -40,16 +40,16 @@ export const Cases = () => {
   };
 
   return (
-    <section id="projects" className="py-8 px-6 bg-white dark:bg-gray-900 scroll-mt-20">
+    <section id="projects" className="py-8 px-4 sm:px-6 bg-white dark:bg-gray-900 scroll-mt-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-3 text-gray-900 dark:text-white">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-gray-900 dark:text-white">
           Проекты
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
+        <p className="text-gray-600 dark:text-gray-400 mb-8 text-base sm:text-lg">
           Избранные работы и кейсы
         </p>
         
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -80,11 +80,11 @@ export const Cases = () => {
                 )}
               </div>
               
-              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-gray-100 transition-colors">
+              <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-900 dark:text-white group-hover:text-black dark:group-hover:text-gray-100 transition-colors">
                 {project.title}
               </h3>
               
-              <p className="text-gray-600 dark:text-gray-400 mb-3 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mb-3 leading-relaxed text-sm sm:text-base">
                 {project.description}
               </p>
               

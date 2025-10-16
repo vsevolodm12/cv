@@ -9,41 +9,41 @@ export const WindowsAutomation = () => {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Header */}
       <header className="border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <button
                 onClick={handleBack}
-                className="group flex items-center gap-2 px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-200"
+                className="group flex items-center gap-2 px-2 sm:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-200"
               >
                 <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />
-                <span className="text-sm font-medium">Назад</span>
+                <span className="text-sm font-medium hidden sm:inline">Назад</span>
               </button>
-              <span className="text-lg font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
+              <span className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
             </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 px-6 bg-white dark:bg-gray-900">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white dark:bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-full text-sm text-blue-700 dark:text-blue-300 mb-6">
               <Zap className="w-4 h-4" />
               Кейс автоматизации
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight">
               Автоматизация розничных продаж окон
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl">
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl">
               Полная автоматизация процесса продаж окон через Авито с AI-агентами, 
               заменяющая 3 сотрудников и работающая 24/7.
             </p>
           </div>
 
           {/* Key Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="group relative overflow-hidden bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/40 dark:to-orange-900/30 rounded-xl p-6 hover:scale-[1.025] transition-all duration-300 ease-out border border-red-200 dark:border-red-900/50">
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-4">
@@ -79,13 +79,13 @@ export const WindowsAutomation = () => {
       </section>
 
       {/* Main Content */}
-      <section className="pt-4 pb-12 px-6 bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto space-y-12">
+      <section className="pt-4 pb-12 px-4 sm:px-6 bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12">
           
           {/* Problem Section */}
           <div className="group">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-5">Что было на старте</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Что было на старте</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
               <div className="space-y-5">
                 <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                   Компания занималась розничной продажей окон через Авито. Процесс выглядел так:

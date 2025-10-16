@@ -35,12 +35,12 @@ export const TechStack = () => {
   ];
 
   return (
-    <section id="tech-stack" className="py-12 sm:py-16 px-4 sm:px-6 bg-white dark:bg-gray-900">
+    <section id="tech-stack" className="py-12 sm:py-16 px-6 sm:px-6 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
           Стек технологий
         </h2>
-        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl">
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 sm:mb-12 max-w-3xl">
           Инструменты и технологии, с которыми я работаю
         </p>
         
@@ -54,13 +54,13 @@ export const TechStack = () => {
                 {category.technologies.map((tech) => (
                   <span
                     key={tech.name}
-                    className="group inline-flex items-center gap-3 px-4 py-3 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-black dark:text-white rounded-xl text-sm sm:text-base hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.11)] hover:scale-[1.025] transition-all duration-300 ease-out transform-gpu touch-manipulation"
+                    className="group inline-flex items-center gap-3 px-4 py-3 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-black dark:text-white rounded-xl text-sm sm:text-base md:hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_2px_12px_rgba(255,255,255,0.11)] md:hover:scale-[1.025] transition-all duration-200 md:duration-300 ease-out transform-gpu touch-manipulation"
                   >
                     <div className={`w-5 h-5 flex-shrink-0 overflow-hidden ${tech.name === 'JavaScript' || tech.name === 'TypeScript' ? 'rounded-md' : 'rounded-full'}`}>
                       <img 
                         src={tech.icon} 
                         alt={tech.name} 
-                        className="w-full h-full object-contain transition-transform duration-300 ease-out group-hover:scale-[1.05]"
+                        className="w-full h-full object-contain"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           target.style.display = 'none';

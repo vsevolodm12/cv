@@ -9,14 +9,14 @@ export const WindowsAutomation = () => {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Header */}
       <header className="border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+        <div className="max-w-6xl mx-auto px-6 sm:px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-4">
               <button
                 onClick={handleBack}
-                className="group flex items-center gap-2 px-2 sm:px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-200"
+                className="group flex items-center gap-2 px-2 sm:px-3 py-2 text-gray-600 dark:text-gray-400 active:text-gray-900 active:dark:text-white md:hover:text-gray-900 md:hover:dark:text-white active:bg-gray-50 active:dark:bg-gray-800 md:hover:bg-gray-50 md:hover:dark:bg-gray-800 rounded-lg transition-all duration-200"
               >
-                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-200" />
+                <ArrowLeft className="w-4 h-4 md:group-hover:-translate-x-1 transition-transform duration-200" />
                 <span className="text-sm font-medium hidden sm:inline">Назад</span>
               </button>
               <span className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
@@ -26,7 +26,7 @@ export const WindowsAutomation = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white dark:bg-gray-900">
+      <section className="py-12 sm:py-16 px-6 sm:px-6 bg-white dark:bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-full text-sm text-blue-700 dark:text-blue-300 mb-6">
@@ -44,7 +44,7 @@ export const WindowsAutomation = () => {
 
           {/* Key Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="group relative overflow-hidden bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/40 dark:to-orange-900/30 rounded-xl p-6 hover:scale-[1.025] transition-all duration-300 ease-out border border-red-200 dark:border-red-900/50">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/40 dark:to-orange-900/30 rounded-xl p-6 md:hover:scale-[1.025] transition-all duration-200 md:duration-300 ease-out border border-red-200 dark:border-red-900/50">
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-4">
                   <Users className="w-5 h-5 text-red-600 dark:text-red-400" />
@@ -54,7 +54,7 @@ export const WindowsAutomation = () => {
               </div>
               <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 dark:bg-red-600/10 rounded-full -mr-16 -mt-16"></div>
             </div>
-            <div className="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/40 dark:to-indigo-900/30 rounded-xl p-6 hover:scale-[1.025] transition-all duration-300 ease-out border border-blue-200 dark:border-blue-900/50">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/40 dark:to-indigo-900/30 rounded-xl p-6 md:hover:scale-[1.025] transition-all duration-200 md:duration-300 ease-out border border-blue-200 dark:border-blue-900/50">
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-4">
                   <Bot className="w-5 h-5 text-blue-600 dark:text-blue-400" />
@@ -64,7 +64,7 @@ export const WindowsAutomation = () => {
               </div>
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 dark:bg-blue-600/10 rounded-full -mr-16 -mt-16"></div>
             </div>
-            <div className="group relative overflow-hidden bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/40 dark:to-emerald-900/30 rounded-xl p-6 hover:scale-[1.025] transition-all duration-300 ease-out border border-green-200 dark:border-green-900/50">
+            <div className="group relative overflow-hidden bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/40 dark:to-emerald-900/30 rounded-xl p-6 md:hover:scale-[1.025] transition-all duration-200 md:duration-300 ease-out border border-green-200 dark:border-green-900/50">
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-4">
                   <TrendingUp className="w-5 h-5 text-green-600 dark:text-green-400" />
@@ -79,13 +79,13 @@ export const WindowsAutomation = () => {
       </section>
 
       {/* Main Content */}
-      <section className="pt-4 pb-12 px-4 sm:px-6 bg-white dark:bg-gray-900">
+      <section className="pt-4 pb-12 px-6 sm:px-6 bg-white dark:bg-gray-900">
         <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12">
           
           {/* Problem Section */}
           <div className="group">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Что было на старте</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-5">Что было на старте</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm md:hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-200 md:duration-300 ease-out">
               <div className="space-y-5">
                 <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                   Компания занималась розничной продажей окон через Авито. Процесс выглядел так:
@@ -115,8 +115,8 @@ export const WindowsAutomation = () => {
 
           {/* Goal Section */}
           <div className="group">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Цель проекта</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-5">Цель проекта</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm md:hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-200 md:duration-300 ease-out">
                 <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 Сделать систему, которая заменит трёх сотрудников и сможет принимать заявки из Авито, 
                 автоматически уточнять параметры, рассчитывать стоимость через API завода, 
@@ -127,7 +127,7 @@ export const WindowsAutomation = () => {
 
           {/* Tech Stack */}
           <div className="group">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Технологический стек</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-5">Технологический стек</h2>
             <div className="flex flex-wrap gap-2 sm:gap-3">
               {[
                 { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
@@ -141,7 +141,7 @@ export const WindowsAutomation = () => {
               ].map((tech) => (
                 <span
                   key={tech.name}
-                  className="group inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-black dark:text-white rounded-xl text-xs sm:text-sm font-medium hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_2px_12px_rgba(255,255,255,0.11)] hover:scale-[1.025] transition-all duration-200"
+                  className="group inline-flex items-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-black dark:text-white rounded-xl text-xs sm:text-sm font-medium md:hover:shadow-[0_2px_12px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_2px_12px_rgba(255,255,255,0.11)] md:hover:scale-[1.025] transition-all duration-200"
                 >
                   <div className="w-4 h-4 flex-shrink-0 overflow-hidden rounded flex items-center justify-center">
                     <img 
@@ -162,8 +162,8 @@ export const WindowsAutomation = () => {
 
           {/* Team Section */}
           <div className="group">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Команда проекта</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-5">Команда проекта</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm md:hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-200 md:duration-300 ease-out">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-semibold text-gray-800 dark:text-white mb-3 flex items-center gap-2">
@@ -190,7 +190,7 @@ export const WindowsAutomation = () => {
                     <Zap className="w-5 h-5 text-gray-600 dark:text-gray-400" />
                     Мои задачи:
                   </h3>
-                  <ul className="space-y-3 text-xs sm:text-sm text-gray-400">
+                  <ul className="space-y-3 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                     <li className="flex items-start gap-3">
                       <ChevronRight className="w-4 h-4 mt-1 text-gray-400 dark:text-gray-600 flex-shrink-0" />
                       Создание ИИ-агента для Авито
@@ -227,11 +227,11 @@ export const WindowsAutomation = () => {
 
           {/* Solutions */}
           <div className="group">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Ответвления продукта</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-5">Ответвления продукта</h2>
             
             <div className="space-y-5">
               {/* A. Avito Automation */}
-              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm md:hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-200 md:duration-300 ease-out">
                 <div className="flex items-center gap-4 mb-5">
                   <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center">
                     <Bot className="w-6 h-6 text-gray-600 dark:text-gray-300" />
@@ -307,7 +307,7 @@ export const WindowsAutomation = () => {
               </div>
 
               {/* B. Telegram Bot */}
-              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm md:hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-200 md:duration-300 ease-out">
                 <div className="flex items-center gap-4 mb-5">
                   <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center">
                     <Database className="w-6 h-6 text-gray-600 dark:text-gray-300" />
@@ -331,8 +331,8 @@ export const WindowsAutomation = () => {
 
           {/* Results */}
           <div className="group">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-5">Результаты</h2>
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-300 ease-out">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-5">Результаты</h2>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 sm:p-7 shadow-sm md:hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] transition-all duration-200 md:duration-300 ease-out">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-bold text-gray-800 dark:text-white mb-4 flex items-center gap-2 text-base sm:text-lg">
@@ -410,7 +410,7 @@ export const WindowsAutomation = () => {
               </div>
             </div>
             <div className="flex gap-6 text-sm">
-              <a href="https://t.me/vsevolodmarchenko" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:scale-[1.025] hover:shadow-[0_2px_8px_rgba(0,0,0,0.08)] dark:hover:shadow-[0_2px_8px_rgba(255,255,255,0.08)] transition-all duration-300 ease-out font-medium">
+              <a href="https://t.me/vsevolodmarchenko" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 active:text-gray-900 active:dark:text-white md:hover:text-gray-900 md:hover:dark:text-white md:hover:scale-[1.025] md:hover:shadow-[0_2px_8px_rgba(0,0,0,0.08)] md:hover:dark:shadow-[0_2px_8px_rgba(255,255,255,0.08)] transition-all duration-200 md:duration-300 ease-out font-medium">
                 Telegram
               </a>
             </div>

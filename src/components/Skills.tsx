@@ -58,9 +58,9 @@ export const Skills = () => {
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
-              <div key={index} className="card-modern border border-gray-200 dark:border-gray-800 rounded-2xl p-6 sm:p-8 md:hover:border-gray-300 md:hover:dark:border-gray-700 md:hover:shadow-[0_4px_20px_rgba(0,0,0,0.11)] md:hover:dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] md:hover:scale-[1.025] transition-all duration-200 md:duration-300 ease-out bg-white dark:bg-gray-800">
+              <div key={index} className="border border-gray-200 dark:border-gray-800 rounded-2xl p-6 sm:p-8 bg-white dark:bg-gray-800">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center md:group-hover:bg-gray-200 md:group-hover:dark:bg-gray-600 transition-colors duration-200 md:duration-300 ease-out">
+                  <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-xl flex items-center justify-center">
                     <Icon className="w-6 h-6 text-gray-700 dark:text-gray-300" />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">

@@ -18,7 +18,8 @@ export const Hero = () => {
             {/* Mobile Layout: Theme Toggle - Title - Menu */}
             <div className="flex md:hidden items-center gap-3 w-full">
               <ThemeToggle />
-              <span className="text-base font-semibold text-gray-900 dark:text-white flex-1 text-center">Всеволод Марченко</span>
+              <span className="text-base font-semibold text-gray-900 dark:text-white">Всеволод Марченко</span>
+              <div className="flex-1"></div>
               <button
                 onClick={toggleMobileMenu}
                 className="p-3 text-gray-600 dark:text-gray-400 active:text-gray-900 active:dark:text-white active:bg-gray-100 active:dark:bg-gray-800 rounded-lg transition-colors duration-200 touch-manipulation"
@@ -95,7 +96,7 @@ export const Hero = () => {
       {/* Hero Section */}
       <section className="py-12 sm:py-16 px-6 sm:px-6 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-4xl">
+          <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 mb-6 sm:mb-8">
               <span className="w-2 h-2 bg-green-500 rounded-full"></span>
               Открыт к предложениям
